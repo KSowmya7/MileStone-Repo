@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Website</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    body{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .bgimg{
+      object-fit: fill;
+    }
+    .first_section{
+      display: flex;
+      color: white;
+      padding-top: 5px;
+      align-items: center;
+      justify-content: center;
+      gap:20px;
+      padding-left: 150px;
+    }
+    .brand_name{
+      position: absolute;
+      font-weight: 800;
+      top:23px;
+      left:150px;
+    }
+    .header_list{
+      position: absolute;
+      font-size: smaller;
+      list-style-type: none;
+      display: flex;
+      gap: 30px;
+      top:10px;
+      left:350px;
+    }
+    .link1{
+      text-decoration: none;
+      color: white;
+    }
+    .quote_button{
+      position: absolute;
+      top:20px;
+      left:700px;
+      padding:12px 28px;
+      background-color: #1664d1;
+      border: none;
+      border-radius: 5px;
+      margin-left: 300px;
+      color: white;
+    }
+    .bgsection{
+      display: flex;
+    }
+    .bgpara{
+      margin-top: 20px;
+      display: flex;
+    }
+    .main_para1{
+      position: absolute;
+      top: 210px;
+      left: 150px;
+      font-size: 42px;
+      font-weight: bolder;
+    }
+    .main_para2{
+      position: absolute;
+      top: 335px;
+      left: 150px;
+      max-width: 270px;
+    }
+    .main_button1{
+      position: absolute;
+      left: 150px;
+      top: 410px;
+      background: #1664d1;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: none;
+      color: white;
+    }
+    .main_button2{
+      position: absolute;
+      left: 300px;
+      top: 410px;
+      padding: 10px 20px;
+      background-color: transparent;
+      border-radius: 25px;
+      border: 1px solid white;
+      color: white;
+    }
+    .form{
+      position: absolute;
+      height: 420px;
+      background-color: white;
+      top: 120px;
+      left: 870px;
+      width: 240px;
+      color: black;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .heading{
+    font-weight: bolder;
+    margin-left: 40px;
+    font-size: larger;
+    }
+    input[type=text],input[type=email],input[type=button], select{
+      width:90%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+    }
+    input[type=button]{
+      background: #1664d1;
+      width:100%;
+      color: white;
+    }
+    select{
+      width: 100%;
+    }
+    .middle_section{
+      margin-top: 50px;
+      text-align: center;
+    }
+    .middle_heading{
+      font-size: 30px;
+      font-weight:950;
+    }
+    .middle_para{
+      color:gray;
+      margin-left: 100px;
+    }
+    .card1{
+      margin-left: 90px;
+      margin-top: 55px;
+    }
+    .box1{
+      width:300px;
+      height: 100px;
+      background-color:#6c6cbf;
+      text-align: center;
+      border-radius: 5px;
+    }
+    .image{
+      width:50px;
+      border-radius: 40px;
+      border: 1px solid rgb(243, 239, 239);
+      margin-top: 20px;
+      margin-right: 15px;
+    }
+    .text1{
+      color: white;
+    }
+    .list{
+      width: 300px;
+      height: 200px;
+      border: 1px solid #6c6cbf;
+      border-radius: 5px;
+      line-height: 28px;
+    }
+    .dash{
+      list-style-type:'- ';
+    }
+    .link2{
+      color: #1919f3;
+      text-decoration: none;
+    }
+    .cards{
+      display: flex;
+    }
+    .section3{
+      background-color: rgb(243, 240, 240);
+      height: 500px;
+      margin-top: 60px;
+      padding-top: 10px;
+      padding-bottom: 70px;
+    }
+    .user1{
+      width:290px;
+      height: 240px;
+      background-color:white;
+      line-height: 25px;  
+      padding: 20px;
+      margin-left: 90px;
+      border-radius: 5px;
+      margin-top: 55px;
+      padding-left: 35px;
+       }
+    .user1pic{
+      width:50px;
+      height: 50px;
+      border-radius: 90px;
+    }
+    .stars{
+      width:190px;
+      height: 120px;
+      margin-bottom: -40px;
+      margin-top: -20px;
+    }
+    .user_cards{
+      display: flex;
+    }
+    .middle_section4{
+      margin-top: 150px;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    .subsection_4{
+      gap:50px;
+      justify-content: center;
+    }
+    .sec4p1{
+      font-weight: bolder;
+      max-width: 250px;
+      margin-left: 30px;
+      margin-top: -25px;
+    }
+    .sec4p2{
+      margin-left: 30px;
+      margin-top: 0;
+      max-width: 250px;
+      margin-bottom: 70px;
+    }
+    .subsection_4{
+      display: flex;
+    }
+    .section5{
+      background-color: rgb(243, 240, 240);
+      height: 720px;
+      margin-top: 60px;
+      padding-top: 10px;
+      padding-bottom: 70px;
+    }
+    .tick1{
+      width: 15px;
+      border-radius: 15px;
+    }
+    .sec5bt{
+      background-color: rgb(25, 176, 176);
+      padding: 10px 85px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+    }
+    .offers{
+      display: flex;
+      flex-direction: row;
+      margin-top: 150px;
+    }
+    .offer_card1{
+      width:300px;
+      height: 450px;
+      background-color: white;
+      border: 1px solid blue;
+      border-radius: 5px;
+      margin-left: 200px;
+      padding-right: 15px;
+    }
+    .offer_card2{
+      width:300px;
+      height: 460px;
+      background-color:black;
+      color: white;
+      border: 1px solid blue;
+      border-radius: 5px;
+      margin-top: -50px;
+      padding-top: 40px;
+      padding-right: 15px;
+    }
+    .offer_card3{
+      width:300px;
+      height: 450px;
+      background-color: white;
+      border: 1px solid blue;
+      border-radius: 5px;
+      padding-right: 15px;
+    }
+    .zero{
+      color: blue;
+      margin-left: -40px;
+      font-size: 40px;
+      align-items: center; 
+      margin-right: 5px;
+      text-align: center;
+    }
+    .box{
+      display: flex; 
+      flex-direction: column; 
+      margin-top: -45px;
+      gap: 5px;
+      color: blue;
+      align-items: center;
+    }
+    .dollar{
+      font-size: 15px;
+    }
+    .month{
+      font-size: 15px;
+      margin-left: 55px;
+    }
+    .section6{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 180px;
+      background-color:rgb(37, 37, 37);
+      color: white;
+      padding-bottom: 25px;
+      padding-top: 20px;
+    }
+    .subscribe{
+      position: absolute;
+      top:3474px;
+      background-color: rgb(61, 105, 176);
+      left: 1030px;
+      padding:14px 9px;
+      padding-left: 19px;
+      padding-right: 19px;
+      color: white;
+      border-radius: 4px;
+      border: none;
+    }
+    .section7{
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 50px;
+    }
+    .footer{
+      text-align: center;
+      height:40px;
+      margin-top: 60px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: rgb(243, 240, 240);
+    }
+  </style>
+</head>
+<body>
+  <img class="bgimage" src="/project2/images/background[1] (4).png" alt="backgroundimage">
+  <div class="first_section">
+    <div>
+      <span class="brand_name">BrandName</span>
+    </div>
+    <nav>
+      <ul class="header_list">
+        <li><a class="link1" href="# ">Home</a></li>
+        <li><a class="link1"  href="#">Product</a></li>
+        <li><a class="link1"  href="#">Pricing</a></li>
+        <li><a class="link1" href="">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <button class="quote_button">Get Quote Now</button>
+    </div>
+    <div class="bgsection">
+      <div class="bgpara">
+        <span class="main_para1">Meet the Best <br> Hospital</span><br>
+        <span  class="main_para2">We know how large objects will act, but things on a small scale.</span><br>
+        <button class="main_button1">Get Quote Now </button>
+        <button class="main_button2">Learn More</button>
+      </div>
+    </div>
+    <div class="form">
+      <form action="#">
+        <span class="heading">Book Appointment</span> <br><br>
+        <label for="name">Name*</label><br>
+        <input type="text" name="name" id="name" placeholder="Full Name*">
+        <label for="email">Email address*</label><br>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+        <label for="depart">Department*</label> <br>
+        <select name="options" id="options">
+          <option value="option">Please Select</option>
+          <option value="option1">Cardiologist</option>
+          <option value="option2">Gynecologist</option>
+          <option value="option3">Pediatrician</option>
+        </select><br>
+        <label for="time">Time*</label><br>
+        <select name="time" id="time">
+          <option value="time">4.00 Available</option>
+          <option value="time">6.00 Available</option>
+          <option value="time">7.00 Available</option>
+        </select><br>
+        <input type="button" value="Book Appointment">
+      </form>
+    </div>
+  </div>
+  <div class="middle_section">
+    <span class="middle_heading">Leading Medicine</span>
+    <p class="middle_para">Problems trying to resolve the conflict between <br> the two major realms of Classical physics:Newtonian mechanics</p>
+  </div>
+  <div class="cards">
+    <div class="card1">
+      <div class="box1">
+        <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMh0ZcgGiRAEpw2GJzXOkQqkJp7HIM1a7Cla0MDeQ0TwKYk7jiSYHxpKnz-4cISsWltN0&usqp=CAU" alt="profile_pic">
+        <span class="text1">Emergency Case</span>
+      </div>
+      <div class="list">
+        <ol>
+          <li class="dash">The best products start with Figma</li>
+          <li class="dash">Design with real data</li>
+          <li class="dash">Lightning fast prototyping</li>
+          <li class="dash">Fastest way to organize</li>
+          <li class="dash">Work at the speed of thought.</li>
+          <a class="link2" href="#">Learn More</a>
+        </ol>
+      </div>
+    </div>
+    <div class="card1">
+      <div class="box1">
+        <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMh0ZcgGiRAEpw2GJzXOkQqkJp7HIM1a7Cla0MDeQ0TwKYk7jiSYHxpKnz-4cISsWltN0&usqp=CAU" alt="profile_pic">
+        <span class="text1">Cancer Care</span>
+      </div>
+      <div class="list">
+        <ol>
+          <li class="dash">The best products start with Figma</li>
+          <li class="dash">Design with real data</li>
+          <li class="dash">Lightning fast prototyping</li>
+          <li class="dash">Fastest way to organize</li>
+          <li class="dash">Work at the speed of thought.</li>
+          <a class="link2"  href="#">Learn More</a>
+        </ol>
+      </div>
+    </div>
+    <div class="card1">
+      <div class="box1">
+        <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMh0ZcgGiRAEpw2GJzXOkQqkJp7HIM1a7Cla0MDeQ0TwKYk7jiSYHxpKnz-4cISsWltN0&usqp=CAU" alt="profile_pic">
+        <span class="text1">Health Quries</span>
+      </div>
+      <div class="list">
+        <ol>
+          <li class="dash">The best products start with Figma</li>
+          <li class="dash">Design with real data</li>
+          <li class="dash">Lightning fast prototyping</li>
+          <li class="dash">Fastest way to organize</li>
+          <li class="dash">Work at the speed of thought.</li>
+          <a class="link2"  href="#">Learn More</a>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="section3">
+    <div class="middle_section">
+      <span class="middle_heading">Leading Medicine</span>
+      <p class="middle_para">Problems trying to resolve the conflict between <br> the two major realms of Classical physics:Newtonian mechanics</p>
+    </div>
+    <div class="user_cards">
+      <div class="user1">
+        <img class="stars" src="https://img.freepik.com/premium-vector/rating-stars-icon-review-productinternet-website-mobile-application_182604-63.jpg" alt="start_icon">
+        <p>Slate helps you see how many <br>more days you need to work to <br>reach your financial.
+        </p>
+        <img class="user1pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ41T6CUqoVVSVPL5WoW3oXTJELPqkTgszIhQ&usqp=CAU" alt="user1">
+      </div>
+    
+      <div class="user1">
+        <img class="stars" src="https://img.freepik.com/premium-vector/rating-stars-icon-review-productinternet-website-mobile-application_182604-63.jpg" alt="start_icon">
+        <p>Slate helps you see how many <br>more days you need to work to <br>reach your financial.
+        </p>
+        <img class="user1pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSg0Hykf8ryAd81Ym4Zqxvhza4oy2lJUrWjw&usqp=CAU" alt="user1">
+      </div>
+
+      <div class="user1">
+        <img class="stars" src="https://img.freepik.com/premium-vector/rating-stars-icon-review-productinternet-website-mobile-application_182604-63.jpg" alt="start_icon">
+        <p>Slate helps you see how many <br>more days you need to work to <br>reach your financial.
+        </p>
+        <img class="user1pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkOLCJ39igKCY6oTcYdnoht8d9Iw0H1zFUFQ&usqp=CAU" alt="user1">
+      </div>
+  </div>
+
+  <div class="section4">
+    <div class="middle_section4">
+      <span class="middle_heading">FAQ</span>
+      <p class="middle_para">Problems trying to resolve the conflict between <br> the two major realms of Classical physics:Newtonian mechanics</p>
+    </div>
+    <div class="subsection_4">
+      <div>
+        <img  style="width:20px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkywwrkq_4pH027JDN5JBacNxRhaIBZYj4Kg&usqp=CAU" alt="pointer">
+          <p class="sec4p1">the quick fox jumps over the lazy dog</p>
+          <p  class="sec4p2">Things on a very small scale behave like nothing</p>
+          <img  style="width:20px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkywwrkq_4pH027JDN5JBacNxRhaIBZYj4Kg&usqp=CAU" alt="pointer">
+          <p class="sec4p1">the quick fox jumps over the lazy dog</p>
+          <p  class="sec4p2">Things on a very small scale behave like nothing</p>
+          <img  style="width:20px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkywwrkq_4pH027JDN5JBacNxRhaIBZYj4Kg&usqp=CAU" alt="pointer">
+          <p class="sec4p1">the quick fox jumps over the lazy dog</p>
+          <p  class="sec4p2">Things on a very small scale behave like nothing</p>
+      </div>
+      <div>
+        <img  style="width:20px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkywwrkq_4pH027JDN5JBacNxRhaIBZYj4Kg&usqp=CAU" alt="pointer">
+          <p class="sec4p1">the quick fox jumps over the lazy dog</p>
+          <p  class="sec4p2">Things on a very small scale behave like nothing</p>
+          <img  style="width:20px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkywwrkq_4pH027JDN5JBacNxRhaIBZYj4Kg&usqp=CAU" alt="pointer">
+          <p class="sec4p1">the quick fox jumps over the lazy dog</p>
+          <p  class="sec4p2">Things on a very small scale behave like nothing</p>
+          <img  style="width:20px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkywwrkq_4pH027JDN5JBacNxRhaIBZYj4Kg&usqp=CAU" alt="pointer">
+          <p class="sec4p1">the quick fox jumps over the lazy dog</p>
+          <p  class="sec4p2">Things on a very small scale behave like nothing</p>
+      </div>
+      <div>
+        <img  style="width:20px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkywwrkq_4pH027JDN5JBacNxRhaIBZYj4Kg&usqp=CAU" alt="pointer">
+          <p class="sec4p1">the quick fox jumps over the lazy dog</p>
+          <p  class="sec4p2">Things on a very small scale behave like nothing</p>
+          <img  style="width:20px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkywwrkq_4pH027JDN5JBacNxRhaIBZYj4Kg&usqp=CAU" alt="pointer">
+          <p class="sec4p1">the quick fox jumps over the lazy dog</p>
+          <p  class="sec4p2">Things on a very small scale behave like nothing</p>
+          <img  style="width:20px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkywwrkq_4pH027JDN5JBacNxRhaIBZYj4Kg&usqp=CAU" alt="pointer">
+          <p class="sec4p1">the quick fox jumps over the lazy dog</p>
+          <p  class="sec4p2">Things on a very small scale behave like nothing</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section5">
+    <div class="middle_section">
+      <span class="middle_heading">Pricing</span>
+      <p class="middle_para">Problems trying to resolve the conflict between <br> the two major realms of Classical physics:Newtonian mechanics</p>
+    </div>
+    <div class="offers">
+      <div class="offer_card1">
+        <div class="offer1" >
+          <h1 style="text-align: center;">FREE</h1>
+          <p style="text-align: center;">Organize across all <br> apps by hand</p>
+          <div class="zero">0 
+          </div>
+            <div class="box">
+            <span class="dollar">$</span> <span class="month">Per Month</span>
+            </div>
+          <div>
+            <ul style="list-style-type:none;">
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU" alt="tick">
+              Unlimited product updates</li> <br>
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU" alt="tick">
+              Unlimited product updates</li> <br>
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU" alt="tick">
+              Unlimited product updates</li> <br>
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCctwZ8DHWw37sxkrXiY5UTEm8UPlKhosIF9yxdCSw4oMQRZYW2-T5H9-JpD9Es3XxG9s&usqp=CAU" alt="tick"> 1GB cloud storage</li><br>
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCctwZ8DHWw37sxkrXiY5UTEm8UPlKhosIF9yxdCSw4oMQRZYW2-T5H9-JpD9Es3XxG9s&usqp=CAU" alt="tick"> Email and community support</li><br>
+            <button class="sec5bt" >Try for free</button>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer_card2">
+        <div class="offer1">
+          <h1 style="text-align: center;">STANDARD</h1>
+          <p style="text-align: center;">Organize across all <br> apps by hand</p>
+          <div class="zero" >9.99 
+          </div>
+            <div class="box" style="margin-left: 50px;">
+            <span class="dollar">$</span> <span class="month">Per Month</span>
+            </div>
+        <div>
+          </div>  
+            <ul style="list-style-type:none;">
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU" alt="tickmark">
+              Unlimited product updates</li> <br>
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU" alt="tickmark">
+              Unlimited product updates</li> <br>
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU" alt="tickmark">
+                Unlimited product updates</li> <br>
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU" alt="tickmark"> 1GB cloud storage</li><br>
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU"
+              alt="tickmark"> Email and community>support</li><br>
+            <button class="sec5bt" >Try for free</button>
+            </ul>
+          </div>
+      </div>
+
+      <div class="offer_card3">
+        <div class="offer1">
+          <h1 style="text-align: center;" >PREMIUM</h1>
+          <p style="text-align: center;">Organize across all <br> apps by hand</p>
+          <div class="zero" >19.99 
+          </div>
+            <div class="box" style="margin-left: 80px;">
+            <span class="dollar">$</span> <span class="month">Per Month</span>
+            </div>
+          <div>
+            <ul style="list-style-type:none;">
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU" alt="tickmark">
+              Unlimited product updates</li> <br>
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU" alt="tickmark">
+              Unlimited product updates</li> <br>
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU" alt="tickmark">
+              Unlimited product updates</li> <br>
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU" alt="tickmark"> 1GB cloud storage</li><br>
+              <li><img class="tick1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWOwwSa7PA6IFVDFYaJpA93lwgHkj-I5H16A&usqp=CAU"
+              alt="tickmark"> Email and community support</li><br>
+            <button class="sec5bt" >Try for free</button>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section6">
+    <div>
+      <h2 style="margin-bottom: 0;">Get In Touch</h2>
+      <p style="margin-top:0 ;">The gradual accumulation of information about atomic and <br> small-scale behaviour during the first quater of the 20th</p>
+    </div>
+    <div>
+      <input style="padding: 13px 20px; position: relative; padding-right: 35px;" type="text" name="email" id="email" placeholder="Your Email">
+      <button class="subscribe">Subscribe</button>
+    </div>
+  </div>
+
+  <div class="section7">
+    <div>
+      <h3>Get in Touch</h3>
+      <p>the quick fox jumps over the <br>lazy dog</p>
+      <div>
+        <img  style="width: 80px;" src="/project2/images/logos.png" alt="icons">
+      </div>
+    </div>
+    <div>
+      <h3>Company info</h3>
+        <p>About Us</p>
+        <p>Carrier</p>
+        <p>We are hiring</p>
+        <p>Blog</p>
+    </div>
+    <div>
+      <h3>Features</h3>
+      <p>Bussiness Marketing</p>
+      <p>User Analytics</p>
+      <p>Live Chat</p>
+      <p>Unlimited Support</p>
+    </div>
+    <div>
+      <h3>Resources</h3>
+      <p>IOS & Android</p>
+      <p>Watch a Demo</p>
+      <p>API</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Made with love By Figmaland All Rights Reserved</p>
+  </div>
+</body>
+</html>
